@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    
+
+    <link rel="stylesheet" href="css/style.min.css?v=1684916528677">
+
+  </head>
+  <body>
+    <header class="header container">
+  <nav class="header__nav">
+    <a class="header__link header__link-home_js" href="/">Home</a>
+    <ul class="header__list header__list_js">
+      <li class="header__item"><a class="header__link header__link-blog_js" href="blog.html">My blog</a></li>
+      <li class="header__item"><button class="header__button sign-btn_js">Sign in</button></li>
+      <li class="header__item"><button class="header__button register-btn_js">Register</button></li>
+    </ul> 
+
+    <ul class="header__list header__list-profile header__list-profile_js hidden">
+      <li class="header__item"><a class="header__link header__link-blog_js" href="blog.html">My blog</a></li>
+      <li class="header__item"><a class="header__link header__link-profile_js" href="profile.html">My profile</a></li>
+      <li class="header__item"><button class="header__button signOut-btn_js">Sign out</button></li>
+    </ul>
+  </nav> 
+  
+  <section class="burger">
+  <h2 class="burger__title hidden">Menu</h2>
+    <div class="burger__wrapper">
+      <button class="burger__close" aria-label="close"></button>
+      
+      <ul class="burger__list burger__list_js">
+        <li><a class="burger__link burger__link-home_js" href="/">Home</a></li>
+        <li><a class="burger__link burger__link-blog_js" href="blog.html">My blog</a></li>
+        <li><button class="burger__button burger-sign_js">Sign in</button></li>
+        <li><button class="burger__button burger-register_js">Register</button></li>
+      </ul>
+
+      <ul class="burger__list burger__list-sign burger__list-sign_js hidden">
+        <li><a class="burger__link burger__link-home_js" href="/">Home</a></li>
+        <li><a class="burger__link burger__link-blog_js" href="blog.html">My blog</a></li>
+        <li><a class="burger__link burger__link-profile_js" href="profile.html">My profile</a></li>
+        <li><button class="burger__button burger-signOut_js">Sign out</button></li>
+      </ul>
+
+    </div>
+</section>
+  <button class="header__burger-btn header__burger-btn_js" aria-label="burger menu"></button>
+  
+</header>
+      <main>
+        <section class="profile container">
+          <h1 class="profile__title">Ekaterina Khizhnyak</h1>
+          <div class="profile__info">
+            <p class="profile__text">Future front-end developer</p>
+            <p class="profile__text">33 years old, Tolyatti</p>
+          </div>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__inner-wrapper">
+
+                <div class="slider__slide">
+                  <picture>
+                    <source srcset="./img/slide-mobile.jpg, ./img/slide-mobile-2x.jpg 2x" media="(max-width: 320px)">
+                    <source srcset="./img/slide-tablet.jpg, ./img/slide-tablet-2x.jpg 2x" media="(max-width: 768px)">
+                    <source srcset="./img/slide.jpg, ./img/slide-2x.jpg 2x" media="(max-width: 1440px)">
+                    <img src="./img/slide.jpg" alt="фото">
+                  </picture>
+                </div>
+
+                <div class="slider__slide">
+                  <picture>
+                    <source srcset="./img/slide-mobile.jpg, ./img/slide-mobile-2x.jpg 2x" media="(max-width: 320px)">
+                    <source srcset="./img/slide-tablet.jpg, ./img/slide-tablet-2x.jpg 2x" media="(max-width: 768px)">
+                    <source srcset="./img/slide.jpg, ./img/slide-2x.jpg 2x" media="(max-width: 1440px)">
+                    <img src="./img/slide.jpg" alt="фото">
+                  </picture>
+                </div>
+
+                <div class="slider__slide">
+                  <picture>
+                    <source srcset="./img/slide-mobile.jpg, ./img/slide-mobile-2x.jpg 2x" media="(max-width: 320px)">
+                    <source srcset="./img/slide-tablet.jpg, ./img/slide-tablet-2x.jpg 2x" media="(max-width: 768px)">
+                    <source srcset="./img/slide.jpg, ./img/slide-2x.jpg 2x" media="(max-width: 1440px)">
+                    <img src="./img/slide.jpg" alt="фото">
+                  </picture>
+                </div>
+
+                <div class="slider__slide">
+                  <picture>
+                    <source srcset="./img/slide-mobile.jpg, ./img/slide-mobile-2x.jpg 2x" media="(max-width: 320px)">
+                    <source srcset="./img/slide-tablet.jpg, ./img/slide-tablet-2x.jpg 2x" media="(max-width: 768px)">
+                    <source srcset="./img/slide.jpg, ./img/slide-2x.jpg 2x" media="(max-width: 1440px)">
+                    <img src="./img/slide.jpg" alt="фото">
+                  </picture>
+                </div>
+
+              </div>
+            </div>
+            <div class="slider__panel">
+              <button class="slider__button slider__button-back_js" aria-label="slider button"></button>
+              <div class="slider__pagination slider__pagination_js"></div>
+              <button class="slider__button slider__button-next_js" aria-label="slider button"></button>
+            </div>
+          </div>
+
+        </section>
+        <section class="aboutMe">
+          <h2 class="aboutMe__title">About me</h2>
+          <div class="aboutMe__inner">
+            <p class="aboutMe__text">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
+            <p class="aboutMe__text">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
+            <p class="aboutMe__text">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
+          </div>
+        </section>
+
+        <section class="skills container">
+          <h2 class="skills__title">Skills</h2>
+          <p class="skills__text">I work in such programs as</p>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img src="./img/icon/html.svg" alt="HTML 5" width="79" height="90">
+              <p class="skills__name">HTML 5</p>
+              <div class="skills__inner">
+                <p class="skills__level">85%</p>
+                <div style="--width: 85" class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <img src="./img/icon/css.svg" alt="CSS/SCSS" width="79" height="90">
+              <p class="skills__name">CSS/SCSS</p>
+              <div class="skills__inner">
+                <p class="skills__level">70%</p>
+                <div style="--width: 70" class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <img src="./img/icon/javaScript.svg" alt="JavaScript" width="68" height="90">
+              <p class="skills__name">JavaScript</p>
+              <div class="skills__inner">
+                <p class="skills__level">20%</p>
+                <div style="--width: 20" class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <img src="./img/icon/gitHub.svg" alt="Git/GitHub" width="90" height="90">
+              <p class="skills__name">Git/GitHub</p>
+              <div class="skills__inner">
+                <p class="skills__level">15%</p>
+                <div style="--width: 15" class="skills__progress"></div>
+              </div>
+            </li>
+            <li class="skills__item">
+              <img src="./img/icon/figma.svg" alt="Figma" width="60" height="90">
+              <p class="skills__name">Figma</p>
+              <div class="skills__inner">
+                <p class="skills__level">80%</p>
+                <div style="--width: 80" class="skills__progress"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="portfolio">
+          <h2 class="portfolio__title">Portfolio</h2>
+
+          <div class="swiper container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/swiper-slide-mobile.jpg, ./img/swiper-slide-mobile-2x.jpg 2x" media="(max-width: 520px)">
+                  <source srcset="./img/swiper-slide-tablet.jpg, ./img/swiper-slide-tablet-2x.jpg 2x" media="(max-width: 960px)">
+                  <source srcset="./img/swiper-slide.jpg, ./img/swiper-slide-2x.jpg 2x" media="(max-width: 1440px)">
+                  <img src="./img/swiper-slide.jpg" alt="страница личного проекта">
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/swiper-slide-mobile.jpg, ./img/swiper-slide-mobile-2x.jpg 2x" media="(max-width: 520px)">
+                  <source srcset="./img/swiper-slide-tablet.jpg, ./img/swiper-slide-tablet-2x.jpg 2x" media="(max-width: 960px)">
+                  <source srcset="./img/swiper-slide.jpg, ./img/swiper-slide-2x.jpg 2x" media="(max-width: 1440px)">
+                  <img src="./img/swiper-slide.jpg" alt="страница личного проекта">
+                </picture>
+        
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/swiper-slide-mobile.jpg, ./img/swiper-slide-mobile-2x.jpg 2x" media="(max-width: 520px)">
+                  <source srcset="./img/swiper-slide-tablet.jpg, ./img/swiper-slide-tablet-2x.jpg 2x" media="(max-width: 960px)">
+                  <source srcset="./img/swiper-slide.jpg, ./img/swiper-slide-2x.jpg 2x" media="(max-width: 1440px)">
+                  <img src="./img/swiper-slide.jpg" alt="страница личного проекта">
+                </picture>
+              </div>
+            </div>
+   
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="portfolio__info container">
+              <a class="portfolio__link" href="">Learning site for DL Academy courses</a>
+              <p class="portfolio__text">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+            </div>
+
+          </div>
+        
+
+        </section>
+      </main>
+    <footer class="footer">
+  <h2 class="footer__title">Contacts</h2>
+  <p class="footer__text">Want to know more or just chat?</p>
+  <p class="footer__text">You are welcome!</p>
+  <button class="footer__button send-btn_js">Send message</button>
+  <ul class="footer__list">
+    <li class="footer__item"><a class="footer__link" href="">Instagram</a></li>
+    <li class="footer__item"><a class="footer__link" href="">Vk</a></li>
+    <li class="footer__item"><a class="footer__link" href="">Telegram</a></li>
+    <li class="footer__item"><a class="footer__link" href="">Mail</a></li>
+    <li class="footer__item"><a class="footer__link" href="">GitHub</a></li>
+    <li class="footer__item"><a class="footer__link" href="#">Phone</a></li>
+  </ul>
+  <a class="footer__info" href="">Design by <span class="footer__dlAcademy">DL Academy</span></a>
+  <p class="footer__info">Program code from Ekaterina</p>
+</footer>
+
+
+    <div class="modal modal-success_js">
+    <div class="modal__overlay modal-success__overlay_js"></div>
+    <div class="modal__wrap-success">
+
+        <div class="modal__message">
+            <p class="modal__message-success">Form has been sent successfully</p>
+        </div>
+
+      <button class="modal__close-success modal__close-success_js" type="button" aria-label="close"></button>
+    </div>
+</div>
+    <div class="modal modal-unsuccess_js">
+    <div class="modal__overlay modal-unsuccess__overlay_js"></div>
+    <div class="modal__wrap-unsuccess">
+
+        <div class="modal__message">
+            <p class="modal__message-unsuccess modal__message-unsuccess_js"></p>
+        </div>
+
+      <button class="modal__close-unsuccess modal__close-unsuccess_js" type="button" aria-label="close"></button>
+    </div>
+</div>
+
+    <div class="popup popup-register_js">
+      <div class="popup__overlay popup__overlay-register_js"></div>
+      <div class="popup__wrap popup__wrap-register_js">
+        <form class="register" name="register" method="post" action="#" novalidate>
+  <div class="register__wrapper">
+      <label class="register__label" for="userEmail">Email <span class="register__star">*</span></label>
+      <input class="register__input register__input--email" type="email" name="email" id="userEmail" required>
+    </div> 
+  <div class="register__two-input">
+    <div class="register__wrapper">
+      <label class="register__label" for="name">Name <span class="register__star">*</span></label>
+      <input class="register__input" type="text" name="name" id="name" required>
+    </div>
+    <div class="register__wrapper">
+      <label class="register__label" for="surname">Surname <span class="register__star">*</span></label>
+      <input class="register__input" type="text" name="surname" id="surname" required>
+    </div>
+  </div>
+  <div class="register__two-input">
+    <div class="register__wrapper">
+      <label class="register__label" for="password">Password <span class="register__star">*</span></label>
+      <input class="register__input" type="password" name="password" id="password" minlength="4" maxlength="8" size="8" required>
+    </div>
+    <div class="register__wrapper">
+      <label class="register__label" for="repeatPassword">Repeat password <span class="register__star">*</span></label>
+      <input class="register__input" type="password" name="repeatPassword" id="repeatPassword" minlength="4" maxlength="8" size="8" required>
+    </div>
+  </div>
+  <div class="register__two-input">
+    <div class="register__wrapper">
+      <label class="register__label" for="location">Location <span class="register__star">*</span></label>
+      <input class="register__input" type="text" name="location" id="location" required>
+    </div>
+    <div class="register__wrapper">
+      <label class="register__label" for="age">Age <span class="register__star">*</span></label>
+      <input class="register__input" type="number" name="age" id="age" required>
+    </div>
+  </div>
+  <div class="register__checkbox">
+    <input class="register__checkbox--input" type="checkbox" name="checkbox" id="checkbox">
+    <label class="register__checkbox--text" for="checkbox">Clicking on the button, you consent to the processing of your personal data.</label>
+  </div>  
+  <button class="register__button" type="submit" disabled="disabled">Sign up</button>  
+</form>
+        <button class="popup__close popup__close-register_js" type="button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="popup popup-sign_js">
+      <div class="popup__overlay popup__overlay-sign_js"></div>
+      <div class="popup__wrap popup__wrap-sign_js">
+        <form class="sign" name="signIn" method="post" action="#" novalidate>
+  <div class="sign__wrapper">
+    <label class="sign__label" for="email">Email <span class="sign__star">*</span></label>
+    <input class="sign__input--email" type="email" name="email" id="email" required>
+  </div> 
+  <div class="sign__wrapper">
+    <label class="sign__label" for="pin">Password <span class="sign__star">*</span></label>
+    <input class="sign__input" type="password" name="password" id="pin" required>
+  </div>
+  <button class="sign__button" type="submit">Log in</button>  
+</form>
+        <button class="popup__close popup__close-sign_js" type="button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="popup popup-send_js">
+      <div class="popup__overlay popup__overlay-send_js"></div>
+      <div class="popup__wrap popup__wrap-send_js">
+        <form class="send" name="send" method="post" action="#" novalidate>
+  <div class="send__two-input">
+    <div class="send__wrapper">
+      <label class="send__label" for="userName">What is your name? <span class="send__star">*</span></label>
+      <input class="send__input send__input_js" type="text" name="name" id="userName" required>
+    </div>
+    <div class="send__wrapper">
+      <label class="send__label" for="subject">Message subject <span class="send__star">*</span></label>
+      <input class="send__input" type="text" name="subjectMessage" id="subject" required>
+    </div>
+  </div>
+  <div class="send__two-input">
+    <div class="send__wrapper">
+      <label class="send__label" for="email3">Your Email <span class="send__star">*</span></label>
+      <input class="send__input" type="email" name="email" id="email3" required>
+    </div> 
+    <div class="send__wrapper">
+      <label class="send__label" for="phone">Your mobile phone <span class="send__star">*</span></label>
+      <input class="send__input" type="tel" name="phone" id="phone" required>
+    </div>
+  </div>
+  <div>
+    <label class="send__label" for="message2">What do you want to discuss with me?</label>
+    <textarea class="send__area" name="message" id="message2" cols="30" rows="10"></textarea>
+  </div>
+  <div class="send__checkbox">
+    <input class="send__checkbox--input" type="checkbox" name="checkbox" id="checkbox2">
+    <label class="send__checkbox--text" for="checkbox2">Clicking on the button, you consent to the processing of your personal data.</label>
+  </div>  
+  <button class="send__button" type="submit" disabled="disabled">Send</button>  
+</form>
+
+        <button class="popup__close popup__close-send_js" type="button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="loader__full hidden loader_js">
+      <div class="loader__spinner-border" role="status"></div>
+    </div>
+
+    <button class="button-to-top button-to-top_hidden button-to-top_js" type="button" aria-label="Вверх"></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>  
+  </body>
+</html>

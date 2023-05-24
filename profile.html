@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    
+
+    <link rel="stylesheet" href="css/style.min.css?v=1684916528677">
+
+  </head>
+  <body>
+    <header class="header header__burger-other container">
+  <nav class="header__nav">
+    <a class="header__link header__link-home_js" href="/">Home</a>
+    <ul class="header__list header__list_js">
+      <li class="header__item"><a class="header__link header__link-blog_js" href="blog.html">My blog</a></li>
+      <li class="header__item"><button class="header__button sign-btn_js">Sign in</button></li>
+      <li class="header__item"><button class="header__button register-btn_js">Register</button></li>
+    </ul> 
+
+    <ul class="header__list header__list-profile header__list-profile_js hidden">
+      <li class="header__item"><a class="header__link header__link-blog_js" href="blog.html">My blog</a></li>
+      <li class="header__item"><a class="header__link header__link-profile_js" href="profile.html">My profile</a></li>
+      <li class="header__item"><button class="header__button signOut-btn_js">Sign out</button></li>
+    </ul>
+  </nav> 
+  
+  <section class="burger">
+  <h2 class="burger__title hidden">Menu</h2>
+    <div class="burger__wrapper">
+      <button class="burger__close" aria-label="close"></button>
+      
+      <ul class="burger__list burger__list_js">
+        <li><a class="burger__link burger__link-home_js" href="/">Home</a></li>
+        <li><a class="burger__link burger__link-blog_js" href="blog.html">My blog</a></li>
+        <li><button class="burger__button burger-sign_js">Sign in</button></li>
+        <li><button class="burger__button burger-register_js">Register</button></li>
+      </ul>
+
+      <ul class="burger__list burger__list-sign burger__list-sign_js hidden">
+        <li><a class="burger__link burger__link-home_js" href="/">Home</a></li>
+        <li><a class="burger__link burger__link-blog_js" href="blog.html">My blog</a></li>
+        <li><a class="burger__link burger__link-profile_js" href="profile.html">My profile</a></li>
+        <li><button class="burger__button burger-signOut_js">Sign out</button></li>
+      </ul>
+
+    </div>
+</section>
+  <button class="header__burger-btn header__burger-btn_js" aria-label="burger menu"></button>
+  
+</header>
+    <main>      
+      <section class="myProfile container">
+        <div class="myProfile__main">
+          <h1 class="myProfile__title">My profile</h1>
+          <div class="myProfile__img-wrapper profile__img-wrapper_js"></div>
+        </div>
+        <div class="myProfile__list">
+          <p class="myProfile__item">Name: <span class="myProfile__data profile__name_js"></span></p>
+          <p class="myProfile__item">Surname: <span class="myProfile__data profile__surname_js"></span></p>
+          <p class="myProfile__item">Email: <span class="myProfile__data profile__email_js"></span></p>
+          <p class="myProfile__item">Password: <span class="profile__password_js">**********</span></p>
+          <p class="myProfile__item">Location: <span class="myProfile__data profile__location_js"></span></p>
+          <p class="myProfile__item">Age: <span class="myProfile__data profile__age_js"></span></p>
+          <ul>
+            <li><button class="myProfile__button password-btn_js" type="submit">Change password</button></li>
+            <li><button class="myProfile__button data-btn_js" type="submit">Change other data</button></li>
+            <li><button class="myProfile__button delete-btn_js" type="submit">Delete account</button></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal modal-success_js">
+    <div class="modal__overlay modal-success__overlay_js"></div>
+    <div class="modal__wrap-success">
+
+        <div class="modal__message">
+            <p class="modal__message-success">Form has been sent successfully</p>
+        </div>
+
+      <button class="modal__close-success modal__close-success_js" type="button" aria-label="close"></button>
+    </div>
+</div>
+    <div class="modal modal-unsuccess_js">
+    <div class="modal__overlay modal-unsuccess__overlay_js"></div>
+    <div class="modal__wrap-unsuccess">
+
+        <div class="modal__message">
+            <p class="modal__message-unsuccess modal__message-unsuccess_js"></p>
+        </div>
+
+      <button class="modal__close-unsuccess modal__close-unsuccess_js" type="button" aria-label="close"></button>
+    </div>
+</div>
+
+    <div class="popup popup-password_js">
+      <div class="popup__overlay popup__overlay-password_js"></div>
+      <div class="popup__wrap popup__wrap-password popup__wrap-password_js">
+        <form class="password" name="password" method="post" action="#" novalidate>
+  <div class="password__wrapper">
+      <label class="password__label" for="password2">Old password <span class="password__star">*</span></label>
+      <input class="password__input" type="password" name="oldPassword" id="password2" required>
+    </div>
+  <div class="password__wrapper">
+    <label class="password__label" for="password3">New password <span class="password__star">*</span></label>
+    <input class="password__input" type="password" name="newPassword" id="password3" required>
+  </div>
+  <div class="password__wrapper">
+    <label class="password__label" for="password4">Repeat new password <span class="password__star">*</span></label>
+    <input class="password__input" type="password" name="repeatPassword" id="password4" required>
+  </div>
+  <button class="password__button" type="submit">Change password</button>  
+</form>
+        <button class="popup__close popup__close-password_js" type="button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="popup popup-data_js">
+      <div class="popup__overlay popup__overlay-data_js"></div>
+      <div class="popup__wrap popup__wrap-data popup__wrap-data_js">
+        <form class="data" name="data" method="post" action="#" novalidate>
+  <div class="data__wrapper">
+      <label class="data__label" for="email4">Email</label>
+      <input class="data__input--email" type="email" name="email" id="email4" required>
+    </div> 
+  <div class="data__two-input">
+    <div class="data__wrapper">
+      <label class="data__label" for="name2">Name</label>
+      <input class="data__input" type="text" name="name" id="name2" required>
+    </div>
+    <div class="data__wrapper">
+      <label class="data__label" for="surname2">Surname</label>
+      <input class="data__input" type="text" name="surname" id="surname2" required>
+    </div>
+  </div>
+  <div class="data__two-input">
+    <div class="data__wrapper">
+      <label class="data__label" for="location2">Location</label>
+      <input class="data__input" type="text" name="location" id="location2" required>
+    </div>
+    <div class="data__wrapper">
+      <label class="data__label" for="age2">Age</label>
+      <input class="data__input" type="number" name="age" id="age2" required>
+    </div>
+  </div> 
+  <div class="data__wrapper"> 
+    <p class="data__label">Profile picture</p>
+    <label class="data__label-file" for="file"><span class="data__label-text data__label-text_js">Choose a file...</span></label> 
+    <input class="data__input-file data__input-file_js" type="file" name="file" id="file" required>
+  </div>
+  <button class="data__button" type="submit">Submit changes</button>  
+</form>
+
+
+        <button class="popup__close popup__close-data_js" type="button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="loader hidden loader_js">
+      <div class="loader__spinner-border" role="status">
+      </div>
+    </div>
+
+    <button class="button-to-top button-to-top_hidden button-to-top_js" type="button" aria-label="Вверх"></button>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/profile.js"></script>
+    </body></html>
